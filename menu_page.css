@@ -307,4 +307,49 @@ counter button starts
 /* search button ends */
 
 
-  
+
+  /* Cart styles */
+.cart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25%;
+  height: 140vh;
+  margin-right: 0;
+  background-color: #e48d6a; /* Orange color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  overflow-y: scroll;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: larger;
+  margin-top: 4%;
+}
+.cart {
+  border: 1px solid black;
+  border-right: none;
+  border-radius: 0 5px 5px 0;
+  padding: 10px;
+  margin-right: 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem 0;
+}
+
+.item-name {
+  font-weight: bold;
+  color: #fff; /* White text color */
+}
+
+.item-price {
+  font-size: 0.8rem;
+  color: #fff; /* White text color */
+}
+
+
+
+

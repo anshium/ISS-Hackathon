@@ -30,27 +30,37 @@ decrementButtons.forEach((button) => {
   });
 });
 
-// window.addEventListener('', changeBlock);
 
-// function changeBlock(){
-// 	let width = window.width;
-// 	console.log(width)
-// 	let nav_imgs = document.getElementsByClassName("icon_like");
-// 	if(width > 600){
-// 		for(var i = 0; i < nav_imgs.length; i++){
-// 			nav_imgs[i].setAttribute("class", "no_display");
-// 		}
-// 	} else{
-// 		for(var i = 0; i < nav_imgs.length; i++){
-// 			nav_imgs[i].setAttribute("class", "please_display");
-// 		}
-// 	}
-// }
+
+
+
+window.addEventListener('', changeBlock);
+
+function changeBlock() {
+  let width = window.width;
+  console.log(width)
+  let nav_imgs = document.getElementsByClassName("icon_like");
+  if (width > 600) {
+    for (var i = 0; i < nav_imgs.length; i++) {
+      nav_imgs[i].setAttribute("class", "no_display");
+    }
+  } else {
+    for (var i = 0; i < nav_imgs.length; i++) {
+      nav_imgs[i].setAttribute("class", "please_display");
+    }
+  }
+}
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
 
 const menuItems = document.querySelectorAll(".menu .tile");
-
-// Get the search input
 const searchInput = document.querySelector("#search-input");
+const cart = document.querySelector(".cart");
+const cartList = document.querySelector(".cart-list");
+const cartItems = {};
 
 // Add an event listener to the search input
 searchInput.addEventListener("input", (event) => {
@@ -75,23 +85,54 @@ searchInput.addEventListener("input", (event) => {
 });
 
 
+menuItems.forEach((item) => {
+  const addButton = item.querySelector(".add-btn");
+  const count = item.querySelector(".count");
 
+  addButton.addEventListener("click", () => {
+    if (parseInt(count.textContent) > 0) {
+      const name = item.querySelector("h2").textContent;
+      const price = item.querySelector("p").textContent;
+      const quantity = parseInt(count.textContent);
 
-function updateMenu(itemName, quantity) {
-  var $menu = $("#menu");
-  var $item = $("<div>").text(itemName + " (" + quantity + ")");
-  $menu.append($item);
-}
+      if (cartItems[name]) {
+        // If the item is already in the cart, update the quantity
+        const currentQuantity = cartItems[name].quantity;
+        const newQuantity = currentQuantity + quantity;
 
-$("#add-button").click(function() {
-  var itemName = $("#item-name").val();
-  var quantity = parseInt($("#counter").val());
+        if (newQuantity < currentQuantity) {
+          // If the new quantity is less than the current quantity, update the cart with the lesser amount
+          cartItems[name].quantity = newQuantity;
+          cartItems[name].element.querySelector(".item-price").textContent = `${price} x ${newQuantity}`;
+        } else {
+          // Otherwise, update the cart with the new quantity
+          cartItems[name].quantity = quantity;
+          cartItems[name].element.querySelector(".item-price").textContent = `${price} x ${cartItems[name].quantity}`;
+        }
+      } else {
+        // Otherwise, add the item to the cart
+        const cartItem = document.createElement("div");
+        cartItem.classList.add("cart-item");
+        cartItem.innerHTML = `
+          <p class="item-name">${name}</p>
+          <p class="item-price">${price} x ${quantity}</p>
+        `;
+        cartList.appendChild(cartItem);
 
-  if (quantity > 0) {
-    // Update the menu with the item name and quantity
-    updateMenu(itemName, quantity);
+        cartItems[name] = {
+          quantity,
+          element: cartItem,
+        };
+      }
 
-    // Reset the counter to 0
-    $("#counter").val(0);
-  }
+     
+    } else {
+      // If the new quantity is 0, remove the item from the cart list
+      const name = item.querySelector("h2").textContent;
+      if (cartItems[name]) {
+        cartList.removeChild(cartItems[name].element);
+        delete cartItems[name];
+      }
+    }
+  });
 });
