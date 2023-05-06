@@ -1,0 +1,48 @@
+Pages:
+
+Navbar-> Menu links + Homepage Link + Order Pickup + About
+
+Homepage -> Info of people + Current expected number of people + Orders currently placed
++
+
+Menu Page: With the facility to add orders + View items + Search bar to filter
+out + 
+
+Order Pickup Page: For accepting orders + Should list the orders that have
+been places, those which habve been picked up recently and at what time they
+were placed
+
+About Page: Giving details of the product IIITEats + About the site + creators
+
+Footer: Creators' Name + Some catchy info + Name of the service + Timings
+
+Checkout page: Addr addn opt + name addn + batch + Display final amt to be
+paid
+
+****RESPONSIVENESS****
+
+
+Javascript + Py Part:
+Homepage:
+	Extraction of the current number of orders from a database
+	Display of the expected number of people and probabilty of getting an
+	order received.
+
+Menu Page:
+	Search bar functionality and fetch options
+	Add orders button which takes to a checkout page 
+
+Order Pickup Page: 
+	Listing of all the available orders that can be picked up
+	Code that calculated the fee to be charged based on the peak time and 
+	Also feature the 
+	Accepting orders feature and accordingly change of the items in
+	various tables in the db
+
+Checkout Page:
+	...
+	
+Ideas that might be implemented later:
+	Flexible order rates
+
+
