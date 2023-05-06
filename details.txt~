@@ -5,7 +5,7 @@ Navbar-> Menu links + Homepage Link + Order Pickup + About
 Homepage -> Info of people + Current expected number of people + Orders currently placed
 +
 
-Menu Page: With the facility to add (multiple) orders with varying quantities + View items + Search bar to filter
+Menu Page: With the facility to add orders + View items + Search bar to filter
 out + 
 
 Order Pickup Page: For accepting orders + Should list the orders that have
@@ -18,8 +18,6 @@ Footer: Creators' Name + Some catchy info + Name of the service + Timings
 
 Checkout page: Addr addn opt + name addn + batch + Display final amt to be
 paid
-
-TERMS page: To list no guarantee of order placing + delivery
 
 ****RESPONSIVENESS****
 
@@ -46,7 +44,5 @@ Checkout Page:
 	
 Ideas that might be implemented later:
 	Flexible order rates
-	Maps
-	More "restraunts"
-	Time based order pickup/delivery system
+
 
