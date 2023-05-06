@@ -148,6 +148,32 @@ nav a{
 #place_order{
 	text-decoration: none;
 	color: black;
+	width: 80%;
+	display: inline-block;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.red a{
+	text-decoration: none;
+	color: red;
+}
+
+.red a:hover{
+	transition: 0.3s ease 0.3s;
+	color: green;
+}
+
+#or{
+	display: inline-block;
+}
+
+#side_image{
+	float: right;
+	margin-right: 25%;
+	margin-top: 7%;
+	width: 20%;
+	content: url("Images/burger.jpg");
 }
 
 .arrow_forward{
