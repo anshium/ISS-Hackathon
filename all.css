@@ -11,6 +11,39 @@ nav{
 	border-bottom: 3px solid black;
 }
 
+#one{
+	content: url("images/home.png");
+}
+
+#two{
+	content: url("Images/menu.png");
+}
+
+#three{
+	content: url("Images/pick.png");
+}
+
+#four{
+	content: url("Images/group.png");
+}
+
+.no_display{
+	display: none;
+}
+
+.please_display{
+	display: block;
+}
+
+/* @media screen and (max-width: 600px) {
+	nav a:not(:first-child) {display: none;}
+	nav .icon_like:not(:first-child) {display: block;}
+	nav a.icon {
+	  float: right;
+	  display: block;
+	}
+} */
+
 a{
 	text-decoration: none;
 	float: left;
