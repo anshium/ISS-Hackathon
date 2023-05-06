@@ -50,4 +50,5 @@ Ideas that might be implemented later:
 	More "restraunts"
 	Time based order pickup/delivery system
 	Animations!
+	Option to remove the placed order on putting the password before it is accepted.
 
