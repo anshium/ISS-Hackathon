@@ -81,48 +81,6 @@ nav a{
 	margin-bottom: 1%;
 }
 
-.footer {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #ffffff;
-    color: black;
-}
-
-.footer p{
-	font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 100%; /* Set the font size to 1.2 rem */
-    text-align: center;
-	/* margin-top: 5%; */
-	margin-top: 1%;
-	margin-bottom: 0;
-	line-height: 10px;
-}
-
-.footer a{
-	text-decoration: none;
-	color: rgb(0, 0, 0);
-	
-}
-
-.footer a:hover{
-	transition: 0.1s ease 0.1s;
-	color:rgb(0, 181, 0);
-}
-
-.colorspan{
-	color: #ffd500;
-}
-
-#gradient {
-    bottom: 0;
-	background-image: linear-gradient(to right, red, orange, yellow, rgb(69, 255, 1), rgb(0, 181, 0));
-	color: white;
-	padding: 5px;
-	text-align: center;
-}
-
 #container1{
 	height: 80vh;
 	background-color: #FFC33D;
@@ -173,7 +131,7 @@ nav a{
 	margin-right: 25%;
 	margin-top: 7%;
 	width: 20%;
-	content: url("Images/burger.jpg");
+	/* content: url("Images/burger.jpg"); */
 }
 
 .arrow_forward{
@@ -207,4 +165,47 @@ nav a{
 	text-transform: capitalize;	
 	font-family: 'Secular One', sans-serif;
 	font-size: 110%;
+}
+
+/*Footer*/
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+    color: black;
+}
+
+.footer p{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100%; /* Set the font size to 1.2 rem */
+    text-align: center;
+	/* margin-top: 5%; */
+	margin-top: 1%;
+	margin-bottom: 0;
+	line-height: 10px;
+}
+
+.footer a{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	
+}
+
+.footer a:hover{
+	transition: 0.1s ease 0.1s;
+	color:rgb(0, 181, 0);
+}
+
+.colorspan{
+	color: #ffd500;
+}
+
+#gradient {
+    bottom: 0;
+	background-image: linear-gradient(to right, red, orange, yellow, rgb(69, 255, 1), rgb(0, 181, 0));
+	color: white;
+	padding: 5px;
+	text-align: center;
 }
