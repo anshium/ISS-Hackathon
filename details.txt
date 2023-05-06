@@ -49,4 +49,5 @@ Ideas that might be implemented later:
 	Maps
 	More "restraunts"
 	Time based order pickup/delivery system
+	Animations!
 
