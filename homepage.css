@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Cabin&family=Changa+One&family=Comfortaa:wght@500&family=Delicious+Handrawn&family=EB+Garamond&family=Patua+One&family=Secular+One&family=Shadows+Into+Light+Two&family=Unna&display=swap');
 
+body{
+	margin: 0 0 0 0;
+}
+
 nav{
 	position: fixed;
 	top: 0px;
@@ -78,7 +82,7 @@ nav a{
 }
 
 .footer {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -117,4 +121,64 @@ nav a{
 	color: white;
 	padding: 5px;
 	text-align: center;
+}
+
+#container1{
+	height: 80vh;
+	background-color: #FFC33D;
+	margin: 0 0 0 0;
+	
+}
+
+#place_order p{
+	position: relative;
+	background-color: white;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	font-family: 'Secular One', sans-serif;
+	text-align: left;
+	/* padding-left: 5%; */
+	border-radius: 200px;
+	width: 20%;
+	margin-left: 20%;
+}
+
+#place_order{
+	text-decoration: none;
+	color: black;
+}
+
+.arrow_forward{
+	float: right;
+	content: url("Images/arrow_forward.png");
+	width: 8%;
+	margin-top: 0.5%;
+}
+
+#container2{
+	height: 80vh;
+	background-color: #ffffff;
+	margin: 0 0 0 0;
+	
+}
+
+#container1 h1{
+	margin-top: 4%;
+	padding-top: 5%;
+	margin-left: 3%;
+	text-transform: capitalize;	
+	font-family: 'Changa One', cursive;
+	font-size: 410%;
+}
+
+#container1 p{
+	/* margin-top: 4%; */
+	/* padding-top: 5%; */
+	max-width: 40%;
+	margin-left: 3%;
+	text-transform: capitalize;	
+	font-family: 'Secular One', sans-serif;
+	font-size: 110%;
 }
