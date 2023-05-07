@@ -145,7 +145,6 @@ nav a{
 }
 
 
-
 #container2 {
 	height: 80vh;
 	background-color: #3298f0;
@@ -163,30 +162,44 @@ nav a{
 	background: linear-gradient(to bottom , rgb(247, 127, 22), yellow);
 	box-shadow: 0 0 300px white;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	/* font-size: 24px; */
+	font-size: 200%;
 	color: black;
 	font-weight: bold;
 	border-radius: 50%;
-	font-size: 5.5vw;
+	font-size: 5vw;
 	font-family: 'Changa One', cursive;
   }
   
- /* to add hover effects */
+  /* to add hover effects */
   .circle:hover {
 	background: linear-gradient(to bottom , yellow,orange);
 	box-shadow: 0 0 300px white;
-	
   }
   
   .circle-left {
-	margin-right: -35%;
+	margin-right: 10%;
   }
   
   .circle-right {
-	margin-left: -35%;
-	
+	margin-left: 10%;
+  }
+  
+  .circle h6 {
+	margin-top: 0;
+	text-align: center;
+	font-size: 1.5vw;
+	font-weight: normal;
+	/* word-wrap: wrap; */
+  }
+  
+  .circle p {
+	margin-top: 1.5rem;
+	font-size: 2.5vw;
+	font-weight: bold;
+	text-align: center;
   }
   
   #side_image_bottom{
