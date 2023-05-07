@@ -1,0 +1,5 @@
+---ASSUMPTIONS---
+1.The user is well-aware of the terms & conditions.
+2.Unlimited number of orders can be placed
+3.Orders are placed within the campus only
+
