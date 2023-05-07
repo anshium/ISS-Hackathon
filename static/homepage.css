@@ -144,11 +144,57 @@ nav a{
 	margin-top: 0.5%;
 }
 
-#container2{
+
+
+#container2 {
 	height: 80vh;
-	background-color: #ffffff;
-	margin: 0 0 0 0;
+	background-color: #3298f0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .circle {
+	width: 300px;
+	height: 300px;
+	border-radius: 90%;
+	border: 7px solid rgba(210, 72, 72, 0.569);
+	background: linear-gradient(to bottom , rgb(247, 127, 22), yellow);
+	box-shadow: 0 0 300px white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	color: black;
+	font-weight: bold;
+	border-radius: 50%;
+  }
+  
+ /* to add hover effects */
+  .circle:hover {
+	background: linear-gradient(to bottom , yellow,orange);
+	box-shadow: 0 0 300px white;
 	
+  }
+  
+  .circle-left {
+	margin-right: -35%;
+  }
+  
+  .circle-right {
+	margin-left: -35%;
+  }
+  
+  #side_image_bottom{
+	position: absolute;
+	float: center;
+	margin-right: 0;
+	margin-left: 10%;
+	margin-top: 5%;
+	width: 80%;
+	height:80%;
+	content: url("Images/catto.png");
 }
 
 #container1 h1{
