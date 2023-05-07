@@ -29,23 +29,23 @@ body{
 	margin-right: 2%;
 	margin-top: 0.5%;
 	width: 3%;
-	content: url("Images/home.png");
+	content: url("../static/home.png");
 }
 
 #one{
-	content: url("images/home.png");
+	content: url("../static/home.png");
 }
 
 #two{
-	content: url("Images/menu.png");
+	content: url("../static/menu.png");
 }
 
 #three{
-	content: url("Images/pick.png");
+	content: url("../static/pick.png");
 }
 
 #four{
-	content: url("Images/group.png");
+	content: url("../static/group.png");
 }
 
 /* .no_display{
@@ -122,7 +122,7 @@ nav a{
 }
 
 #first_man{
-	content: url("Images/pin.png");
+	content: url("../static/pin.png");
 	width: 20%;
 	margin-top: 5%;
 	margin-left: 40%;
@@ -154,7 +154,7 @@ nav a{
 	height: 100vmin;
 	margin: 0 0 0 0;
 	background-color: #27AAE2;
-	background-image: url("Images/paperplane.jpg");
+	background-image: url("../static/paperplane.jpg");
 	background-size: 100vmin;
 	background-repeat: no-repeat;
 }

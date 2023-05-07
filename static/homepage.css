@@ -29,23 +29,23 @@ nav .icon_like{
 	margin-right: 2%;
 	margin-top: 0.5%;
 	width: 3%;
-	content: url("../Images/home.png");
+	content: url("../static/home.png");
 }
 
 #one{
-	content: url("../images/home.png");
+	content: url("../static/home.png");
 }
 
 #two{
-	content: url("../Images/menu.png");
+	content: url("../static/menu.png");
 }
 
 #three{
-	content: url("../Images/pick.png");
+	content: url("../static/pick.png");
 }
 
 #four{
-	content: url("../Images/group.png");
+	content: url("../static/group.png");
 }
 
 /* .no_display{
@@ -131,12 +131,12 @@ nav a{
 	margin-right: 25%;
 	margin-top: 7%;
 	width: 20%;
-	/* content: url("Images/burger.jpg"); */
+	/* content: url("static/burger.jpg"); */
 }
 
 .arrow_forward{
 	float: right;
-	content: url("Images/arrow_forward.png");
+	content: url("../static/arrow_forward.png");
 	width: 8%;
 	margin-top: 0.5%;
 }
