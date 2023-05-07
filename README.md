@@ -4,6 +4,27 @@
 
 Hungzy@IIIT
 
+## Directory Structure
+
+```
+.
+order.txt
+menu.txt
+Assumptions.md
+README.md
+runscript.py
+|-Static
+	|-CSS Files
+	|-Javascript Files
+	|-Images
+|-Templates
+	|-HTML Files
+|-Old Files
+	|-Files
+```
+
+Old files used for testing and future expansion.
+
 ## Brief Summary of the Features
 
 ### Details of the Site
