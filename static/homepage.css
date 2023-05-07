@@ -165,10 +165,12 @@ nav a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 24px;
+	/* font-size: 24px; */
 	color: black;
 	font-weight: bold;
 	border-radius: 50%;
+	font-size: 5.5vw;
+	font-family: 'Changa One', cursive;
   }
   
  /* to add hover effects */
@@ -184,6 +186,7 @@ nav a{
   
   .circle-right {
 	margin-left: -35%;
+	
   }
   
   #side_image_bottom{

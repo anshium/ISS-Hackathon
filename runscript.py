@@ -70,7 +70,7 @@ def homepage():
 	with open("orders.txt", "r") as f:
 		k = f.readlines()
 		length = len(k)
-	return render_template("homepage.html", length = length)
+	return render_template("homepage.html", length=length)
 
 @app.route("/aboutpage")
 def aboutpage():
