@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="menu_page.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script>
+    <script language="JavaScript" type="text/javascript" src="/js/sprinkle.js"></script> -->
 </head>
 
 
@@ -29,12 +33,11 @@
             <input type="text" id="search-input" placeholder="Your Perfect Match">
             <div id="search-results"></div>
           </div>
-          
-
 
         <div class="tiles-container">
             <div class="menu">
                 <a href="#" class="tile">
+                    <h3>1</h3>
                     <h2>Oreo Shake</h2>
                     <p>35</p>
                     
@@ -46,6 +49,7 @@
                     </div>
                 </a>
                 <a href="#" class="tile">
+                    <h3>1</h3>
                     <h2>shawarma</h2>
                     <p>Price</p>
                     
@@ -57,6 +61,7 @@
                     </div>
                 </a>
                 <a href="#" class="tile">
+                    <h3>1</h3>
                     <h2>noodles</h2>
                     <p>Price</p>
                     
@@ -68,6 +73,7 @@
                     </div>
                 </a>
                 <a href="#" class="tile">
+                    <h3>1</h3>
                     <h2>Just checking if wrapping</h2>
                     <p>Price</p>
                     
@@ -83,6 +89,7 @@
         <div class="tiles-container">
             <div class="menu">
                 <a href="#" class="tile">
+                    <h3>1</h3>
                     <h2>fdg 1</h2>
                     <p>Price</p>
                     
@@ -94,6 +101,7 @@
                     </div>
                 </a>
                 <a href="#" class="tile">
+                    <h3>1</h3>
                     <h2>dfhd 2</h2>
                     <p>Price</p>
                     
@@ -105,6 +113,7 @@
                     </div>
                 </a>
                 <a href="#" class="tile">
+                    <h3>1</h3>
                     <h2>jg 3</h2>
                     <p>Price</p>
                     
@@ -116,6 +125,7 @@
                     </div>
                 </a>
                 <a href="#" class="tile">
+                    <h3>1</h3>
                     <h2>dsffsd 1</h2>
                     <p>Price</p>
                     
@@ -131,6 +141,7 @@
         <div class="tiles-container">
             <div class="menu">
                 <a href="#" class="tile">
+                    <h3>1</h3>
                     <h2>fgd 1</h2>
                     <p>Price</p>
                     
@@ -142,6 +153,7 @@
                     </div>
                 </a>
                 <a href="#" class="tile">
+                    <h3>1</h3>
                     <h2>jyf 2</h2>
                     <p>Price</p>
                     
@@ -153,6 +165,7 @@
                     </div>
                 </a>
                 <a href="#" class="tile">
+                    <h3>1</h3>
                     <h2>sdtgr 3</h2>
                     <p>Price</p>
                     
@@ -164,6 +177,7 @@
                     </div>
                 </a>
                 <a href="#" class="tile">
+                    <h3>1</h3>
                     <h2>Title 1</h2>
                     <p>Price</p>
                     
@@ -180,6 +194,7 @@
         <div class="tiles-container">
             <div class="menu">
                 <a href="#" class="tile">
+                    <h3>1</h3>
                     <h2>Tfgitle 1</h2>
                     <p>Price</p>
                     
@@ -191,6 +206,7 @@
                     </div>
                 </a>
                 <a href="#" class="tile">
+                    <h3>1</h3>
                     <h2>Title 2</h2>
                     <p>Price</p>
                     
@@ -202,6 +218,7 @@
                     </div>
                 </a>
                 <a href="#" class="tile">
+                    <h3>1</h3>
                     <h2>Title 3</h2>
                     <p>Price</p>
                     
@@ -213,6 +230,7 @@
                     </div>
                 </a>
                 <a href="#" class="tile">
+                    <h3>1</h3>
                     <h2>Mango </h2>
                     <p>Price</p>
                     
@@ -226,25 +244,26 @@
             </div>
         </div>
 
-
+        <p id = "storage">Hello</p>
         <div class="cart">
             <h2>Your Order:</h2>
-            <form>
+            <form id = "form">
               <label for="name">Name:</label>
               <input type="text" id="name" name="name" required><br>
               <label for="location">Location:</label>
               <input type="text" id="location" name="location" required><br>
               <label for="batch">Batch:</label>
               <input type="text" id="batch" name="batch" required>
+            
+                <div class="cart-list">
+                <!-- <p class="empty-cart">Your Cart</p> -->
+                </div>
+                <div class="cart-buttons">
+                    <input class="checkout-btn" type = "submit">Checkout</button>
+                </div>
+                <div id = "output"></div>
             </form>
-            <div class="cart-list">
-              <!-- <p class="empty-cart">Your Cart</p> -->
-            </div>
-            <div class="cart-buttons">
-                <button class="checkout-btn">Checkout</button>
-              </div>
-          </div>
-          
+        </div>
     <div class="footer">
         <div id="gradient"></div><b>
             <p>IIIT EATS: a perfect platform to serve your hunger <br><br>Created by <span class="colorspan">Ansh

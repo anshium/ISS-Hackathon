@@ -30,10 +30,6 @@ decrementButtons.forEach((button) => {
   });
 });
 
-
-
-
-
 window.addEventListener('', changeBlock);
 
 function changeBlock() {
@@ -51,16 +47,11 @@ function changeBlock() {
   }
 }
 
-
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
 const menuItems = document.querySelectorAll(".menu .tile");
 const searchInput = document.querySelector("#search-input");
 const cart = document.querySelector(".cart");
 const cartList = document.querySelector(".cart-list");
-const cartItems = {};
+let cartItems = {};
 
 // Add an event listener to the search input
 searchInput.addEventListener("input", (event) => {
@@ -91,36 +82,43 @@ menuItems.forEach((item) => {
 
   addButton.addEventListener("click", () => {
     if (parseInt(count.textContent) > 0) {
+      const id = item.querySelector("h3").textContent;
       const name = item.querySelector("h2").textContent;
       const price = item.querySelector("p").textContent;
       const quantity = parseInt(count.textContent);
 
-      if (cartItems[name]) {
+      if (cartItems[id]) {
         // If the item is already in the cart, update the quantity
-        const currentQuantity = cartItems[name].quantity;
+        const currentQuantity = cartItems[id].quantity;
         const newQuantity = currentQuantity + quantity;
 
         if (newQuantity < currentQuantity) {
           // If the new quantity is less than the current quantity, update the cart with the lesser amount
-          cartItems[name].quantity = newQuantity;
-          cartItems[name].element.querySelector(".item-price").textContent = `${price} x ${newQuantity}`;
+          cartItems[id].name = name;
+          cartItems[id].quantity = newQuantity;
+          cartItems[id].element.querySelector(".item-price").textContent = `${price} x ${newQuantity}`;
         } else {
           // Otherwise, update the cart with the new quantity
-          cartItems[name].quantity = quantity;
-          cartItems[name].element.querySelector(".item-price").textContent = `${price} x ${cartItems[name].quantity}`;
+          cartItems[id].name = name;
+          cartItems[id].quantity = quantity;
+          cartItems[id].price = price;
+          cartItems[id].element.querySelector(".item-price").textContent = `${price} x ${cartItems[id].quantity}`;
         }
       } else {
         // Otherwise, add the item to the cart
         const cartItem = document.createElement("div");
         cartItem.classList.add("cart-item");
         cartItem.innerHTML = `
+          <p class = "id">${id}</p>
           <p class="item-name">${name}</p>
           <p class="item-price">${price} x ${quantity}</p>
         `;
         cartList.appendChild(cartItem);
 
-        cartItems[name] = {
+        cartItems[id] = {
+          name,
           quantity,
+          price,
           element: cartItem,
         };
       }
@@ -129,10 +127,38 @@ menuItems.forEach((item) => {
     } else {
       // If the new quantity is 0, remove the item from the cart list
       const name = item.querySelector("h2").textContent;
-      if (cartItems[name]) {
-        cartList.removeChild(cartItems[name].element);
-        delete cartItems[name];
+      if (cartItems[id]) {
+        cartList.removeChild(cartItems[id].element);
+        delete cartItems[id];
       }
     }
+    console.log(cartItems)
+    let data = document.getElementById("storage");
+    data.innerHTML = JSON.stringify(cartItems);
+    data = document.getElementById("storage").innerHTML;
+    console.log(data)
+  });
+});
+
+$(document).ready(function() {
+  // var items = JSON.stringify(cartList);
+  // console.log(items)
+  $('#form').on('submit', function(e){
+    $.ajax({
+      data : {
+        name : $('#name').val(),
+        location : $('#location').val(),
+        batch : $('#batch').val(),
+        items : $('#storage').html()
+      },
+      type : 'POST',
+      url : 'http://127.0.0.1:5000/receive'
+    })
+    .done(function(data){
+      console.log(data)
+      console.log($('#storage').val())
+      console.log(data.items)
+    });
+    e.preventDefault();
   });
 });

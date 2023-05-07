@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Cabin&family=Changa+One&family=Comfortaa:wght@500&family=Delicious+Handrawn&family=EB+Garamond&family=Patua+One&family=Secular+One&family=Shadows+Into+Light+Two&family=Unna&display=swap');
+
+nav{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	width: 100%;
+	z-index: 100;
+	background-color: #ffffff;
+	border-bottom: 3px solid black;
+}
+
+nav .icon_like{
+	width: 1%;
+	height: 1%;
+	/* padding-left: 10%; */
+	margin-top: 0.5%;
+	/* margin-right: 10%; */
+}
+
+body{
+	margin: 0 0 0 0;
+}
+
+#logo{
+	float: left;
+	margin-left: 3%;
+	margin-right: 2%;
+	margin-top: 0.5%;
+	width: 3%;
+	content: url("Images/home.png");
+}
+
+#one{
+	content: url("images/home.png");
+}
+
+#two{
+	content: url("Images/menu.png");
+}
+
+#three{
+	content: url("Images/pick.png");
+}
+
+#four{
+	content: url("Images/group.png");
+}
+
+/* .no_display{
+	display: none;
+}
+
+.please_display{
+	display: block;
+} */
+
+/* @media screen and (max-width: 1000px) {
+	nav a:not(:first-child) {display: none;}
+	nav .icon_like:not(:first-child) {display: block; padding-left: 15%;}
+	nav a.icon {
+	  float: right;
+	  display: block;
+	}
+} */
+
+nav a{
+	text-decoration: none;
+	float: left;
+	color: rgb(34, 34, 34);
+	text-align: center;
+	padding-top: 0px;
+	padding-left: 1%;
+	padding-right: 2%;
+	padding-bottom: 0px;
+	font-size: 1.5vw;
+	text-transform: uppercase;
+	font-family: 'Patua One', cursive;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+#container1{
+	height: 100vmin;
+	background-image: url("Images/aboutpagebg.png");
+	background-size: 100vw;
+	background-repeat: no-repeat;
+	background-color: #ffd500;
+}
+
+#container1 #header1_exam_part{
+	margin-top: 5%;
+	padding-top: 10%;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Changa One', cursive;
+	font-size: 7.5vw;
+	padding: 0 0 0 0;
+	margin-bottom: 0;
+}
+
+#container1 #header1_stomach_part{
+	margin-top: 0%;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Changa One', cursive;
+	font-size: 3vw;
+}
+
+#container2{
+	margin-top: 0;
+	height: 100vmin;
+	background-color: orange;
+}
+
+#solution{
+	text-align: center;
+	font-size: 1.8vw;
+	font-family: 'Secular One', sans-serif;
+	text-transform: uppercase;
+}
+
+#first_man{
+	content: url("Images/pin.png");
+	width: 20%;
+	margin-top: 5%;
+	margin-left: 40%;
+	border-radius: 50%;
+}
+
+#container2 h1{
+	margin-left: 5%;
+	margin-top: 0;
+	padding-top: 5%;
+	font-family: 'Secular One', sans-serif;
+	color: rgb(0, 0, 0);
+	font-size: 2vw;
+	text-align: right;
+	margin-right: 5%;
+	line-height: 250%;
+	
+}
+
+#container2 h1 span{
+	background-color: white;
+	padding-left: 5%;
+	padding-right: 5%;
+	border-radius: 100px;
+	border: 2px solid black;
+}
+
+#container3{
+	height: 100vmin;
+	margin: 0 0 0 0;
+	background-color: #27AAE2;
+	background-image: url("Images/paperplane.jpg");
+	background-size: 100vmin;
+	background-repeat: no-repeat;
+}
+
+#container3 h1{
+	margin-top: 0;
+	padding-top: 5%;
+	padding-left: 5%;
+	color: rgb(255, 225, 0);
+	font-size: 2vw;
+	font-family: 'Secular One', sans-serif;
+}
+
+#container3 h1 span{
+	background-color: rgb(0, 0, 0);
+	padding-left: 5%;
+	padding-right: 5%;
+	border-radius: 100px;
+}
+
+#ishita{
+	margin-left: 70%;
+}
+
+#ansh{
+	margin-top: 50%;
+	margin-left: 30%;
+}
+
+/*Footer*/
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+    color: black;
+}
+
+.footer p{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1vw; /* Set the font size to 1.2 rem */
+    text-align: center;
+	/* margin-top: 5%; */
+	margin-top: 1%;
+	margin-bottom: 0;
+	line-height: 10px;
+}
+
+.footer a{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	
+}
+
+.footer a:hover{
+	transition: 0.1s ease 0.1s;
+	color:rgb(0, 181, 0);
+}
+
+.colorspan{
+	color: #ffd500;
+}
+
+#gradient {
+    bottom: 0;
+	background-image: linear-gradient(to right, red, orange, yellow, rgb(69, 255, 1), rgb(0, 181, 0));
+	color: white;
+	padding: 5px;
+	text-align: center;
+}

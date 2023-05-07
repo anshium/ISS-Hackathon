@@ -8,17 +8,24 @@ class DBClass:
 
     def execute(self, query):
         self.cur.execute(query)
-        return [i[0] for i in self.cur.description], self.cur.fetchall()
-
+        if self.cur.description:
+            return [i[0] for i in self.cur.description], self.cur.fetchall()
+        
 db = DBClass("database.db")
 
-# db.execute("CREATE TABLE tantra(item_id int PRIMARY KEY, item_name varchar(255),cost int);")
+db.execute("CREATE TABLE IF NOT EXISTS tantra(item_id int PRIMARY KEY, item_name varchar(255),cost int);")
 
-db.execute("INSERT INTO tantra VALUES (1, 'OREO SHAKE', 37)")
+# db.execute("INSERT INTO tantra VALUES (1, 'OREO SHAKE', 37)")
 
 # db.execute("INSERT INTO tantra values(2, 'Apple', 35);")
 
 # db.execute("INSERT INTO tantra values(3, 'Banana', 31);")
+
+try:
+    db.execute("INSERT INTO tantra VALUES (1, 'OREO SHAKE', 37)")
+    print("Values inserted successfully.")
+except sqlite3.Error as e:
+    print("Error inserting values:", e)
 
 # db.execute("INSERT INTO tantra values(4, 'Papaya', 35);")
 

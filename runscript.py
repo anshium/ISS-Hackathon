@@ -1,6 +1,7 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 from flask_cors import CORS
 import sqlite3
+import json
 
 app = Flask(__name__)
 CORS(app, origins="*")
@@ -30,3 +31,22 @@ def getTheMadeRequest():
 		''')
 	cur.commit()
 	cur.close()
+
+@app.route("/receive", methods = ['GET', 'POST'])
+def bar():
+	if(request.method == "POST"):
+		name = request.form['name']
+		location = request.form['location']
+		batch = request.form['batch']
+		items = request.form['items']
+		j_items = json.loads(items)
+		ret_val = jsonify({'name': name, 'location': location, 'batch': batch, 'items': j_items})	
+		print(ret_val)
+		with open('orders.txt', 'a') as f:
+			for i in j_items:
+				print(i)
+				#f.write(f"{i},{i.name},{i.quantity},{i.price}")
+		return ret_val
+	
+if __name__ == "__main__":
+	app.run(debug = True)
