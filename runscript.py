@@ -61,12 +61,16 @@ def pickUpPage():
 		k = f.readlines()
 		for i in k:
 			items.append(i.split(","))
-	print(items)
+	# print(items)
 	return render_template("pickuppage.html", items = items)
 
 @app.route("/homepage")
 def homepage():
-	return render_template("homepage.html")
+	length = 0
+	with open("orders.txt", "r") as f:
+		k = f.readlines()
+		length = len(k)
+	return render_template("homepage.html", length = length)
 
 @app.route("/aboutpage")
 def aboutpage():
@@ -74,7 +78,13 @@ def aboutpage():
 
 @app.route("/menupage")
 def menupage():
-	return render_template("menu_page.html")
+	items = []
+	with open("menu.txt", "r") as f:
+		k = f.readlines()
+		for i in k:
+			items.append(i.split(","))
+	print(items)
+	return render_template("menu_page.html", items = items)
 
 if __name__ == "__main__":
 	app.run(debug = True)

@@ -1,0 +1,16 @@
+item_id,canteen_id,name,name_of_canteen,price
+101,1,veg fried rice,tantra,90
+102,1,veg noodles,tantra,70
+103,1,shawarma,tantra,30
+104,1,manchurian,tantra,80
+105,1,chicken shawarma,tantra,45
+106,1,chicken fried rice,tantra,100
+201,2,oreo shake,jc,35
+202,2,watermelon,jc,25
+203,2,mango,jc,30
+301,3,sandwich,david,50
+302,3,fried maggie,david,50
+303,3,dosa,david,45
+401,4,french fries,vc,60
+402,4,cold coffee,vc,35
+403,4,veg puff,vc,25

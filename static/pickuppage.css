@@ -122,16 +122,16 @@ nav a{
 
 table{
 	font-size: 2vw;
-	border: 1px solid black;
+	/* border: 1px solid black; */
 	text-align: center;
 	align-self: center;
 	text-transform: capitalize;
 }
 
-table th{
-	border: 1px solid black;
+table td{
+	border-top: 1px solid black;
 }
 
-table td{
+/* table td{
 	border: 1px solid black;
-}
+} */

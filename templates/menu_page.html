@@ -33,7 +33,7 @@
             <div id="search-results"></div>
           </div>
 
-        <div class="tiles-container">
+        <!-- <div class="tiles-container">
             <div class="menu">
                 <a href="#" class="tile">
                     <h3>1</h3>
@@ -136,8 +136,25 @@
                     </div>
                 </a>
             </div>
+        </div> -->
+        <div class = "tiles-container">
+            <div class = "menu">
+                {% for item in items %}
+                <a href = "#" class = "tile">
+                    <h3>{{item[0]}}</h3>
+                    <h2>{{item[2]}}</h2>
+                    <p>{{item[4]}}</p>
+                    <button class = "add-btn">Add</button>
+                    <div class="counter">
+                        <button class="decrement-btn">-</button>
+                        <span class="count">0</span>
+                        <button class="increment-btn">+</button>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
         </div>
-        <div class="tiles-container">
+        <!-- <div class="tiles-container">
             <div class="menu">
                 <a href="#" class="tile">
                     <h3>9</h3>
@@ -241,7 +258,7 @@
                     </div>
                 </a>
             </div>
-        </div>
+        </div> -->
         <div id = "output"></div>
         <p id = "storage">Hello</p>
         <div class="cart">
