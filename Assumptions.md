@@ -1,4 +1,4 @@
-# ASSUMPTIONS
+# Assumptions
 
 1. The user is well-aware of the terms & conditions.
 2. Any orders are subject to non-payment risks.
