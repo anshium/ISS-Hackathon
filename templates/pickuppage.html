@@ -57,13 +57,13 @@
             <button class = "remove" name = "Remove" id = "{{ item[0] }}" onclick = "remove(`{{ item[0] }}`)">Accept</button>
             <p>{{ item[0] }}</p><h1>{{ item[1] }}
             <h2>Price: {{ item[2] }} | Quantity: {{ item[3] }}</h2></h1>
-            <h3>Details-> Name: {{ item[5] }} | Batch: {{ item[6] }} | Phone: {{ item[7] }}</h3>
+            <h3>Details-: Name: {{ item[4] }} | Location {{ item[5] }}| Batch: {{ item[6] }} | Phone: {{ item[7] }}</h3>
         </div>
                 
         {% endfor %}
     </div>
     <div id = "statistics_container">
-        <h1 id = "space_maker"></h1>
+        <p id = "space_maker">₹5 / delivery</p>
         <div class = "stats" id = "JC">
             <h1>Orders for JC: {{ jc }}</h1>
         </div>

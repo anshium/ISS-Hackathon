@@ -79,39 +79,41 @@ nav a{
 
   
 .footer {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #ffffff;
-    color: black;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ffffff;
+  color: black;
 }
-  
+
 
 .footer p{
-	font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 100%; /* Set the font size to 1.2 rem */
-    text-align: center;
-	/* margin-top: 5%; */
-	margin-top: 1%;
-	margin-bottom: 0;
-	line-height: 10px;
-    
+font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 100%; /* Set the font size to 1.2 rem */
+  text-align: center;
+/* margin-top: 5%; */
+margin-top: 1%;
+margin-bottom: 0;
+line-height: 10px;
+  
 }
 
 .footer a{
-	text-decoration: none;
-	color: rgb(0, 0, 0);
-	
+text-decoration: none;
+color: rgb(0, 0, 0);
+
 }
 
 .footer a:hover{
-	transition: 0.1s ease 0.1s;
-	color:rgb(0, 181, 0);
+transition: 0.1s ease 0.1s;
+color:rgb(0, 181, 0);
 }
 
 .colorspan{
-	color: #ffd500;
+	/* font-size: 140%; */
+	color: #00ff1a;
+	/* border-bottom: 3px solid black;	 */
 }
 
 #gradient {
@@ -289,6 +291,9 @@ counter button starts
   .count {
     width: 2rem;
     text-align: center;
+    font-size: 1.8vw;
+    font-family: 'Changa One', cursive;
+    padding-bottom: 2px;
   }
   /* counter button ends  */
 /* search button starts*/

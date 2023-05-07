@@ -57,13 +57,18 @@ def bar():
 def pickUpPage():
 	r = ""
 	items = []
+	# d = {'tantra': 0, 'JC': , 'David', 'VC'}
+	l = [0, 0, 0, 0, 0]
 	with open("orders.txt", "r") as f:
 		k = f.readlines()
 		for i in k:
-			items.append(i.split(","))
+			j = i.split(",")
+			items.append(j)
+			l[int(j[0])//100 - 1] += 1
 	# print(items)
-	return render_template("pickuppage.html", items = items)
+	return render_template("pickuppage.html", items = items, tantra = l[0], jc = l[1], david = l[2], vc = l[3], bbc = l[4])
 
+@app.route("/")
 @app.route("/homepage")
 def homepage():
 	length = 0

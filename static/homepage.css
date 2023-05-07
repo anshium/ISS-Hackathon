@@ -240,6 +240,7 @@ nav a{
     width: 100%;
     background-color: #ffffff;
     color: black;
+	font-family: 'Changa One', cursive;
 }
 
 .footer p{
@@ -264,7 +265,20 @@ nav a{
 }
 
 .colorspan{
-	color: #ffd500;
+	/* font-size: 140%; */
+	color: #00ff1a;
+	/* border-bottom: 3px solid black;	 */
+}
+
+.colorspan2{
+	font-size: 140%;
+	color: #ffffff;
+	border-bottom: 3px solid black;
+}
+
+.circle p{
+	line-height: 0px;
+	font-size: 5.5vw;
 }
 
 #gradient {

@@ -112,6 +112,9 @@ nav a{
 	margin-top: 0;
 	height: 100vmin;
 	background-color: orange;
+	background-image: url('aboutpage_2.png');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 #solution{

@@ -1,7 +1,8 @@
-103,shawarma,30,1,jhg,jghjhgj,hgjh,gjhg
-102,veg noodles,70,1,sjh,gkj,hkj,hkjh
-104,manchurian,80,3,kjhkj,kjh,mjh,kjhk
-104,manchurian,80,3,sijh,jh,ih,iuh
-106,chicken fried rice,100,1,sijh,jh,ih,iuh
-201,oreo shake,35,1,sijh,jh,ih,iuh
-202,watermelon,25,3,sijh,jh,ih,iuh
+102,veg noodles,70,1,Ansh,WS,UG2k22,909090909009
+201,oreo shake,35,1,Ansh,WS,UG2k22,909090909009
+106,chicken fried rice,100,1,Bipasha,WS,UG2k22,10202010200
+104,manchurian,80,1,Ishita,Parijat,UG2k22,2987298272
+401,french fries,60,2,Ishita,Parijat,UG2k22,2987298272
+301,sandwich,50,1,John Smith,Nowhereland,UG2k21,209820982
+302,fried maggie,50,1,Vishva,KRB,UG2k19,2987298729
+105,chicken shawarma,45,1,Sanjai Kumaran P,OBH,UG2k19,20983098490
