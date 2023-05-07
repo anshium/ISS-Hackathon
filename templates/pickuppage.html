@@ -26,7 +26,12 @@
     </div>
     
     <div id = "container">
-        
+        <div>
+            {% for item in items %}
+                <p>{{ item[0] }} {{ item[1] }} {{ item[2] }} {{ item[3] }} {{ item[4] }}</p>
+                <button class = "remove" name = "Remove">Accept</button>
+            {% endfor %}
+        </div>
     </div>
 
     <div class="footer">
@@ -41,11 +46,9 @@
         <br />
     </div>
 
-    <div>
-        
-    </div>
+    
 
-    <p id = "idontknowwhatiamdoing">orders.txt</p>
+    <!-- <p id = "idontknowwhatiamdoing">orders.txt</p> -->
     <script src="../static/pickuppage.js"></script>
 </body>
 

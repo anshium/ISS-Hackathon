@@ -56,10 +56,13 @@ def bar():
 @app.route("/pickup")
 def pickUpPage():
 	r = ""
+	items = []
 	with open("orders.txt", "r") as f:
-		r = f.readline()
-		item = r.split(",")
-	return render_template("pickuppage.html", item = item)
+		k = f.readlines()
+		for i in k:
+			items.append(i.split(","))
+	print(items)
+	return render_template("pickuppage.html", items = items)
 
 @app.route("/homepage")
 def homepage():
