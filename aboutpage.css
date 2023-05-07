@@ -168,8 +168,18 @@ nav a{
 	font-family: 'Secular One', sans-serif;
 }
 
+#container3 img{
+	margin-right:10%;
+	border-radius: 50%;
+	height: 120px;
+	width:120px;
+	box-shadow: 10px 10px 5px rgb(64, 20, 82);
+}
+#container3 img:hover{	
+	transform: scaleX(-1);
+}
 #container3 h1 span{
-	background-color: rgb(0, 0, 0);
+	background-color: rgb(1, 0, 2);
 	padding-left: 5%;
 	padding-right: 5%;
 	border-radius: 100px;
@@ -180,8 +190,9 @@ nav a{
 }
 
 #ansh{
-	margin-top: 50%;
+	
 	margin-left: 30%;
+	margin-bottom: 70%;
 }
 
 /*Footer*/
