@@ -26,12 +26,30 @@
     </div>
     
     <div id = "container">
-        <div>
+        <table>
+            <tr>
+                <th>Item Id</th>
+                <th>Name of Item</th>
+                <th>Price per Item</th>
+                <th>Quantity</th>
+                <th>Orderer</th>
+                <th>Location</th>
+                <th>Batch</th>
+                <th>Order</th>
+            </th>
             {% for item in items %}
-                <p>{{ item[0] }} {{ item[1] }} {{ item[2] }} {{ item[3] }} {{ item[4] }}</p>
-                <button class = "remove" name = "Remove">Accept</button>
+                <tr>
+                    <td>{{ item[0] }}</td> 
+                    <td>{{ item[1] }}</td> 
+                    <td>{{ item[2] }}</td> 
+                    <td>{{ item[3] }}</td> 
+                    <td>{{ item[4] }}</td>
+                    <td>{{ item[5] }}</td>
+                    <td>{{ item[6] }}</td>
+                    <td><button class = "remove" name = "Remove">Accept</button></td>
+                </tr> 
             {% endfor %}
-        </div>
+        </table>
     </div>
 
     <div class="footer">

@@ -78,7 +78,7 @@ nav a{
 
 #container{
 	height: 100vh;
-	margin: 5%;
+	margin-top: 7%;
 	margin-bottom: 25%;
 }
    
@@ -120,3 +120,18 @@ nav a{
 	color: #ffd500;
 }
 
+table{
+	font-size: 2vw;
+	border: 1px solid black;
+	text-align: center;
+	margin-left: 15%;
+	text-transform: capitalize;
+}
+
+table th{
+	border: 1px solid black;
+}
+
+table td{
+	border: 1px solid black;
+}
