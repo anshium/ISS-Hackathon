@@ -2,6 +2,7 @@
 
 body{
 	margin: 0 0 0 0;
+	background-color: #ff7300;
 }
 
 nav{
@@ -74,12 +75,14 @@ nav a{
 }
 .colorspan{
 	color: #ffd500;
+	margin-left: 33%;
 }
 
 #container{
 	height: 100vh;
 	margin-top: 7%;
 	margin-bottom: 25%;
+	float: right;
 }
    
 /*Footer*/
@@ -121,17 +124,59 @@ nav a{
 }
 
 table{
-	font-size: 2vw;
+	font-size: 1.8vw;
 	/* border: 1px solid black; */
 	text-align: center;
 	align-self: center;
 	text-transform: capitalize;
+	
+}
+
+table th{
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	padding-left: 0.5vw;
+	padding-right: 0.5vw;
+	font-family: 'Changa One', cursive;
 }
 
 table td{
 	border-top: 1px solid black;
+	border-right: 1px solid black;
+	font-family: 'Secular One', sans-serif;
 }
 
 /* table td{
 	border: 1px solid black;
 } */
+
+#statistics_container{
+	height: 100vh;
+	width: 30%;
+	border-right: 1px solid black;
+	overflow: scroll;
+	background-color: #266200;
+}
+
+/* #space_maker{
+	margin-top: 5%;
+} */
+
+#JC{
+	margin-top: 20%;
+}
+
+.stats{
+	margin-top: 2%;
+	padding-bottom: 5vh;
+	padding-top: 5vh;
+	background-color: #ffd500;
+	text-align: left;
+	border-radius: 5% 50% 5% 50%;
+}
+
+.stats h1{
+	margin-left: 2vh;
+	text-transform: uppercase;
+	font-family: 'Changa One', cursive;
+}

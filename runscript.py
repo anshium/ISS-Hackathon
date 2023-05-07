@@ -82,7 +82,7 @@ def menupage():
 	with open("menu.txt", "r") as f:
 		k = f.readlines()
 		for i in k:
-			items.append(i.split(","))
+			items.append(i.replace("\n", "").split(","))
 	print(items)
 	return render_template("menu_page.html", items = items)
 

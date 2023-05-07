@@ -36,9 +36,9 @@
                 <th>Location</th>
                 <th>Batch</th>
                 <th>Order</th>
-            </th>
+            </tr>
             {% for item in items %}
-                <tr id = "{{ items[0] }}">
+                <tr>
                     <td>{{ item[0] }}</td> 
                     <td>{{ item[1] }}</td> 
                     <td>{{ item[2] }}</td> 
@@ -51,7 +51,24 @@
             {% endfor %}
         </table>
     </div>
-
+    <div id = "statistics_container">
+        <h1 id = "space_maker"></h1>
+        <div class = "stats" id = "JC">
+            <h1>Orders for JC: {{ jc }}</h1>
+        </div>
+        <div class = "stats" id = "VC">
+            <h1>Orders for VC: {{ vc }}</h1>
+        </div>
+        <div class = "stats" id = "BBC">
+            <h1>Orders for BBC: {{ bbc }}</h1>
+        </div>
+        <div class = "stats" id = "David">
+            <h1>Orders for David: {{ david }}</h1>
+        </div>
+        <div class = "stats" id = "Tantra">
+            <h1>Orders for Tantra: {{ tantra }}</h1>
+        </div>
+    </div>
     <div class="footer">
         <div id="gradient"></div><b>
             <p>IIIT EATS: a perfect platform to serve your hunger <br><br>Created by <span class="colorspan">Ansh
