@@ -149,6 +149,7 @@ $(document).ready(function() {
         name : $('#name').val(),
         location : $('#location').val(),
         batch : $('#batch').val(),
+        phone : $('#phone').val(),
         items : $('#storage').html()
       },
       type : 'POST',

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Cabin&family=Changa+One&family=Comfortaa:wght@500&family=Delicious+Handrawn&family=EB+Garamond&family=Patua+One&family=Secular+One&family=Shadows+Into+Light+Two&family=Unna&display=swap');
 
+body{
+	margin: 0 0 0 0;
+}
+
 nav{
 	position: fixed;
 	top: 0px;
@@ -61,10 +65,27 @@ nav a{
 	margin-bottom: 1%;
 }
 
-  
+#gradient {
+    bottom: 0;
+	background-image: linear-gradient(to right, red, orange, yellow, rgb(69, 255, 1), rgb(0, 181, 0));
+	color: white;
+	padding: 5px;
+	text-align: center;
+}
+.colorspan{
+	color: #ffd500;
+}
+
+#container{
+	height: 100vh;
+	margin: 5%;
+	margin-bottom: 25%;
+}
+   
+/*Footer*/
 .footer {
     margin-top: 7%;
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     bottom: 0;
     width: 100%;
@@ -98,56 +119,4 @@ nav a{
 .colorspan{
 	color: #ffd500;
 }
-
-#gradient {
-    bottom: 0;
-	background-image: linear-gradient(to right, red, orange, yellow, rgb(69, 255, 1), rgb(0, 181, 0));
-	color: white;
-	padding: 5px;
-	text-align: center;
-}
-.colorspan{
-	color: #ffd500;
-}
-
-.container{
-height: 100vh;
-margin: 5%;
-margin-bottom: 25%;
-}
-
-.hidden {
-    display: none;
-    
-  }
-  
-
-
-  .order {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .order span {
-    margin-right: 10px;
-  }
-  
-  .order button {
-    background-color: green;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-   body {
-    height: 20vh;
-    background: linear-gradient(to bottom right, #ff9800, #ffeb3b);
-    background-repeat: repeat;
-  background-position: center center;
-  
-  }
-   
-
 

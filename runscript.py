@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 import sqlite3
 import json
@@ -38,17 +38,22 @@ def bar():
 		name = request.form['name']
 		location = request.form['location']
 		batch = request.form['batch']
+		phone = request.form['phone']
 		items = request.form['items']
 		j_items = json.loads(items)
-		ret_val = jsonify({'name': name, 'location': location, 'batch': batch, 'items': j_items})	
+		ret_val = jsonify({'name': name, 'location': location, 'batch': batch, 'phone': phone, 'items': j_items})	
 		print(type(j_items))
 		with open('orders.txt', 'a') as f:
 			for i in list(j_items.keys()):
-				string = str(i) + "," + str(j_items[i]['name']) + "," + j_items[i]['price'] + "," + str(j_items[i]['quantity']) + "," + name + "," + location + "," + batch + "\n"
+				string = str(i) + "," + str(j_items[i]['name']) + "," + j_items[i]['price'] + "," + str(j_items[i]['quantity']) + "," + name + "," + location + "," + batch + "," + phone + "\n"
 				f.write(string)
 		return ret_val
-	
+
+@app.route("/pickup")
+def pickUpPage():
+	return render_template("pickuppage.html")
+
 if __name__ == "__main__":
 	app.run(debug = True)
 
-#id, nameof item, price, qunatity, name of orderer, location of orderer, batch of orderer
+#id, name of item, price, qunatity, name of orderer, location of orderer, batch of orderer
