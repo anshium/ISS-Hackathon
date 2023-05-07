@@ -89,4 +89,4 @@ def menupage():
 if __name__ == "__main__":
 	app.run(debug = True)
 
-#id, name of item, price, qunatity, name of orderer, location of orderer, batch of orderer
+#id, name of item, price, qunatity, name of orderer, location of orderer, batch of orderer, phone

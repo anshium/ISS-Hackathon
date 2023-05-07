@@ -1,2 +1,7 @@
 103,shawarma,30,1,jhg,jghjhgj,hgjh,gjhg
 102,veg noodles,70,1,sjh,gkj,hkj,hkjh
+104,manchurian,80,3,kjhkj,kjh,mjh,kjhk
+104,manchurian,80,3,sijh,jh,ih,iuh
+106,chicken fried rice,100,1,sijh,jh,ih,iuh
+201,oreo shake,35,1,sijh,jh,ih,iuh
+202,watermelon,25,3,sijh,jh,ih,iuh

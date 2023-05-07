@@ -344,15 +344,15 @@ counter button starts
 }
 
 .cart {
-position: fixed;
+position: absolute;
   top: 0;
   right: 0;
   width: 25%;
-  height: 108vh;
+  height: 100vh;
   margin-right: 0;
   background-color: #ffffff; /* Orange color */
   /* border-color: #208223; */
-  border: 3px solid #208223;
+  /* border: 3px solid #208223; */
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
   padding: 1rem;
   overflow-y: scroll;
@@ -361,9 +361,9 @@ position: fixed;
   margin-top: 3%;
   margin-right: 0.5vw;
   /* margin-bottom: 10%; */
-  /* border-radius: 50px; */
-  border: 1px solid black;
-  border-right: none;
+
+  border-left: 5px solid rgb(40, 107, 2);
+  border-bottom: 5px solid rgb(40, 107, 2);
   border-radius: 0 5px 5px 0;
   padding: 10px;
 }
