@@ -127,11 +127,14 @@ nav a{
 }
 
 #side_image{
+	position: absolute;
 	float: right;
-	margin-right: 25%;
-	margin-top: 7%;
-	width: 20%;
-	/* content: url("static/burger.jpg"); */
+	margin-right: 0;
+	margin-left: 40%;
+	margin-top: 1%;
+	width: 60%;
+	height:10%0;
+	content: url("../static/foodmix.png");
 }
 
 .arrow_forward{
