@@ -41,12 +41,14 @@ def bar():
 		items = request.form['items']
 		j_items = json.loads(items)
 		ret_val = jsonify({'name': name, 'location': location, 'batch': batch, 'items': j_items})	
-		print(ret_val)
+		print(type(j_items))
 		with open('orders.txt', 'a') as f:
-			for i in j_items:
-				print(i)
-				#f.write(f"{i},{i.name},{i.quantity},{i.price}")
+			for i in list(j_items.keys()):
+				string = str(i) + "," + str(j_items[i]['name']) + "," + j_items[i]['price'] + "," + str(j_items[i]['quantity']) + "," + name + "," + location + "," + batch + "\n"
+				f.write(string)
 		return ret_val
 	
 if __name__ == "__main__":
 	app.run(debug = True)
+
+#id, nameof item, price, qunatity, name of orderer, location of orderer, batch of orderer
