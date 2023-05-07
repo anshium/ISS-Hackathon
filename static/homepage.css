@@ -194,7 +194,7 @@ nav a{
 	margin-top: 5%;
 	width: 80%;
 	height:80%;
-	content: url("Images/catto.png");
+	content: url("../static/catto.png");
 }
 
 #container1 h1{
