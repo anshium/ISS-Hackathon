@@ -25,23 +25,23 @@ nav .icon_like{
 	margin-right: 2%;
 	margin-top: 0.5%;
 	width: 3%;
-	content: url("Images/home.png");
+	content: url("../Images/home.png");
 }
 
 #one{
-	content: url("images/home.png");
+	content: url("../Images/home.png");
 }
 
 #two{
-	content: url("Images/menu.png");
+	content: url("../Images/menu.png");
 }
 
 #three{
-	content: url("Images/pick.png");
+	content: url("../Images/pick.png");
 }
 
 #four{
-	content: url("Images/group.png");
+	content: url("../Images/group.png");
 }
 
 /* .no_display{
