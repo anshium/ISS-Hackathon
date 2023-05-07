@@ -319,7 +319,6 @@ counter button starts
 
 /* search button ends */
 
-
 #storage{
   display: none;
 }
@@ -344,16 +343,12 @@ counter button starts
   color: #000000; /* White text color */
 }
 
-
-
-
-
 .cart {
 position: fixed;
   top: 0;
   right: 0;
   width: 25%;
-  height: 178vh;
+  height: 108vh;
   margin-right: 0;
   background-color: #ffffff; /* Orange color */
   /* border-color: #208223; */

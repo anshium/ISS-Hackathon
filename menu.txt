@@ -1,4 +1,3 @@
-item_id,canteen_id,name,name_of_canteen,price
 101,1,veg fried rice,tantra,90
 102,1,veg noodles,tantra,70
 103,1,shawarma,tantra,30
