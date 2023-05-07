@@ -83,7 +83,7 @@ nav a{
 
 #container1{
 	height: 100vmin;
-	background-image: url("Images/aboutpagebg.png");
+	background-image: url("../static/aboutpagebg.png");
 	background-size: 100vw;
 	background-repeat: no-repeat;
 	background-color: #ffd500;

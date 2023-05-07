@@ -28,6 +28,14 @@ CORS(app, origins="*")
 # 	cur.commit()
 # 	cur.close()
 
+id_index = 0
+name_index = 1
+price_index = 2
+quantity_index = 3
+orderer_index = 4
+location_index = 5
+batch_index = 6
+
 @app.route("/receive", methods = ['GET', 'POST'])
 def bar():
 	if(request.method == "POST"):
@@ -47,9 +55,13 @@ def bar():
 
 @app.route("/pickup")
 def pickUpPage():
-	return render_template("pickuppage.html")
+	r = ""
+	with open("orders.txt", "r") as f:
+		r = f.readline()
+		item = r.split(",")
+	return render_template("pickuppage.html", item = item)
 
-@app.route("/")
+@app.route("/homepage")
 def homepage():
 	return render_template("homepage.html")
 
