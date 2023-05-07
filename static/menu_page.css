@@ -127,7 +127,8 @@ nav a{
 
 .container{
 height: 100vh;
-margin: 5%;
+margin-left: 0%;
+margin-top: 7vw;
 margin-bottom: 25%;
 }
 
@@ -185,14 +186,15 @@ margin-bottom: 25%;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-left: 2%;
+    margin-left: 1%;
   }
   
   .tile {
+    /* text-transform: uppercase; */
     width: 15vw;
     height: 20vw;
-    background-color: rgb(242, 197, 73);
-    border-radius: 10px;
+    background-color: rgb(255, 153, 0);
+    border-radius: 0px;
     margin: 20px;
     margin-left: 0%;
     text-align: center;
@@ -203,8 +205,11 @@ margin-bottom: 25%;
   }
   
   .tile h2{
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-family: 'Secular One', sans-serif;
+    background-color: rgb(255, 230, 0);
+    padding: 2 2 2 2;
+    border-radius: 2px;
   }
 
   .tile:hover {
@@ -217,10 +222,14 @@ margin-bottom: 25%;
   
   .tile p {
     margin-top: 5px;
-    font-size: 85%;
+    font-size: 215%;
+    font-family: 'Changa One', cursive;
   }
   
-  
+  body{
+    margin: 0 0 0 0;
+  }
+
   /* _____________________________________________________________________________- */
 
   .add-btn {
@@ -229,7 +238,8 @@ margin-bottom: 25%;
     color: #fff;
     padding: 10px 30px;
     border-radius: 5px;
-    font-size: 10px;
+    font-size: 1vw;
+    line-height: 2px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
   }
@@ -251,7 +261,7 @@ counter button starts
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.2rem;
+    font-size: 2.2;
     font-weight: bold;
     margin: 0.5rem;
   }
@@ -259,11 +269,13 @@ counter button starts
   .increment-btn,
   .decrement-btn {
     border: none;
+    margin-top: 10%;
+    line-height: 80%;
     background-color: #68cc2e;
     color: #fff;
     padding: 0px 10px;
     border-radius: 5px;
-    font-size: 10px;
+    font-size: 2vw;
     
     cursor: pointer;
 
@@ -282,14 +294,15 @@ counter button starts
 /* search button starts*/
 
 #search-input {
-  margin-left: 2%;
-  border: 2px solid #FFB900;
-  border-radius: 20px;
+  margin-left: 20%;
+  border: 2px solid #000000;
+  border-radius: 2px;
+  width: 30%;
   padding: 10px;
   font-size: 20px;
   font-family: cursive;
-  font-style: italic;
-  
+  /* font-style: italic; */
+  font-family: "Changa One", cursive;
   color: #444444;
   background-color: #FDFDFD;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -301,7 +314,7 @@ counter button starts
 
 #search-input:focus {
   outline: none;
-  box-shadow: 0px 0px 10px rgba(255, 185, 0, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* search button ends */
@@ -313,20 +326,22 @@ counter button starts
 
 .cart-item {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   border-bottom: 1px solid #ddd;
-  padding: 0.5rem 0;
+  
 }
 
 .item-name {
+  text-transform: capitalize;
   font-weight: bold;
-  color: #fff; /* White text color */
+  color: #000000; /* White text color */
 }
 
 .item-price {
+  text-transform: capitalize;
   font-size: 0.8rem;
-  color: #fff; /* White text color */
+  color: #000000; /* White text color */
 }
 
 
@@ -334,19 +349,22 @@ counter button starts
 
 
 .cart {
-position: absolute;
+position: fixed;
   top: 0;
   right: 0;
   width: 25%;
   height: 178vh;
   margin-right: 0;
-  background-color: #e48d6a; /* Orange color */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff; /* Orange color */
+  /* border-color: #208223; */
+  border: 3px solid #208223;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
   padding: 1rem;
   overflow-y: scroll;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Secular One', sans-serif;
   font-size: larger;
-  margin-top: 9.5%;
+  margin-top: 3%;
+  margin-right: 0.5vw;
   /* margin-bottom: 10%; */
   /* border-radius: 50px; */
   border: 1px solid black;
@@ -378,7 +396,7 @@ position: absolute;
   border: 1px solid #CCC;
   font-size: 16px;
   padding: 10px;
-  width: 100%;
+  width: 80%;
   margin-bottom: 20px;
 }
 
@@ -396,7 +414,7 @@ position: absolute;
 }
 
 .cart .checkout-btn {
-  background-color: #FFA500;
+  background-color: #00ff48;
   border: none;
   border-radius: 3px;
   color: #FFF;

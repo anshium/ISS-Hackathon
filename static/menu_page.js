@@ -159,7 +159,15 @@ $(document).ready(function() {
       console.log(data)
       console.log($('#storage').val())
       console.log(data.items)
+      window.location.reload()
     });
     e.preventDefault();
   });
 });
+
+// let a = document.getElementsByClassName(".tile")
+// for(var i = 0; i < a.length; i++){
+//   let price = a.innerHTML;
+//   let with_symbol = "Rs. " + price;
+//   a.innerHTML = with_symbol;
+// }
